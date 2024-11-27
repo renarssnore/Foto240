@@ -8,21 +8,23 @@
 
 /* Body styles */
 body {
-    font-family: Arial, sans-serif;
-    background-color: black;
-    color: white;
+    font-family: 'Arial', sans-serif;
+    background-color: #121212; /* Darker background */
+    color: #f0f0f0; /* Off-white text for better readability */
+    scroll-behavior: smooth; /* Smooth scrolling when navigating between sections */
 }
 
 /* Header styles */
 header {
-    background: red;
-    color: white;
+    background: #c40000; /* Dark red header */
+    color: #fff;
     padding: 20px;
     text-align: center;
 }
 
 header h1 {
     font-size: 36px;
+    margin-bottom: 10px;
 }
 
 /* Navigation styles */
@@ -38,16 +40,18 @@ header h1 {
 }
 
 .nav a {
-    color: white;
+    color: #fff;
     text-decoration: none;
     font-size: 18px;
-    padding: 10px 20px;
-    background-color: red;
+    padding: 12px 25px;
+    background-color: #c40000; /* Red background for buttons */
     border-radius: 5px;
+    transition: all 0.3s ease; /* Add smooth transition for hover effect */
 }
 
 .nav a:hover {
-    background-color: #c40000;
+    background-color: #9e0000; /* Slightly darker red on hover */
+    transform: scale(1.1); /* Slight zoom effect when hovering */
 }
 
 /* Section styles */
@@ -56,22 +60,24 @@ section {
     margin: 20px auto;
     width: 90%;
     max-width: 900px;
-    background: black;
+    background: #121212;
     border-radius: 8px;
 }
 
 section h2 {
     font-size: 28px;
     margin-bottom: 20px;
+    color: #f0f0f0;
 }
 
 section p {
     font-size: 18px;
     line-height: 1.6;
+    color: #d0d0d0; /* Softer color for paragraphs */
 }
 
 section a {
-    color: red;
+    color: #c40000;
     text-decoration: none;
 }
 
@@ -79,7 +85,7 @@ section a:hover {
     text-decoration: underline;
 }
 
-/* Pricing section */
+/* Pricing Section */
 .pricing {
     display: flex;
     justify-content: center;
@@ -87,11 +93,13 @@ section a:hover {
 }
 
 .pricing-item {
-    background: red;
+    background: #c40000; /* Red background for pricing cards */
     padding: 20px;
     border-radius: 8px;
     width: 300px;
     color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease;
 }
 
 .pricing-item h3 {
@@ -99,13 +107,37 @@ section a:hover {
     margin-bottom: 15px;
 }
 
+.pricing-item:hover {
+    transform: translateY(-10px); /* Subtle lifting effect on hover */
+}
+
+/* Button for WhatsApp in Kontakti */
+.button-whatsapp {
+    display: inline-block;
+    background-color: #25D366; /* WhatsApp green color */
+    color: white;
+    padding: 12px 25px;
+    border-radius: 5px;
+    font-size: 18px;
+    text-align: center;
+    margin-top: 20px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.button-whatsapp:hover {
+    background-color: #128C7E; /* Darker green when hovering */
+}
+
+/* Footer styles */
 footer {
     text-align: center;
     padding: 20px;
-    background-color: black;
-    color: white;
+    background-color: #121212;
+    color: #f0f0f0;
 }
 
+/* Media Queries for responsiveness */
 @media (max-width: 768px) {
     .nav {
         display: flex;
@@ -115,5 +147,10 @@ footer {
     
     .nav li {
         margin: 10px 0;
+    }
+
+    .pricing {
+        flex-direction: column;
+        align-items: center;
     }
 }
