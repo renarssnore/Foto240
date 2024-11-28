@@ -121,3 +121,31 @@ section {
 .gallery-container img:hover {
     transform: scale(1.1);
 }
+
+/* Media Queries for Mobile Optimization */
+@media (max-width: 768px) {
+    .buttons {
+        flex-direction: column; /* Stacks buttons vertically */
+        gap: 10px;
+    }
+
+    .gallery-container {
+        grid-template-columns: repeat(auto-fit, minmax(120px, 1fr)); /* Adjusts the size for smaller screens */
+        gap: 15px; /* Increases the gap between images */
+    }
+
+    .gallery-container img {
+        max-width: 100px; /* Reduces the maximum size of the images */
+    }
+}
+
+@media (max-width: 480px) {
+    header nav ul {
+        flex-direction: column; /* Stacks navigation items vertically */
+        align-items: center;
+    }
+
+    header nav ul li {
+        margin: 5px 0; /* Adjusts spacing for smaller screens */
+    }
+}
