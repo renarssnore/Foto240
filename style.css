@@ -5,11 +5,12 @@ body {
     background-color: #000;
     color: #fff;
     line-height: 1.6;
-    background-image: url('background.jpg'); /* Replace 'background.jpg' with your image file name */
-    background-size: cover;
+    background-image: url('background.jpg'); /* Your image file */
+    background-size: cover; /* Adjust this if needed */
     background-repeat: no-repeat;
     background-position: center;
 }
+
 header {
     background: #333;
     padding: 10px 20px;
