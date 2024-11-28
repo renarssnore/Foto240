@@ -71,7 +71,7 @@ section {
     opacity: 0.8;
 }
 .button.whatsapp { background: #25D366; }
-.button.tiktok { background: #000; color: #FF0050; }
+.button.tiktok { background: #FF0050; color: #000; }
 .button.facebook { background: #4267B2; }
 .button.gmail { background: #D93025; }
     
