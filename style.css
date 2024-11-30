@@ -87,8 +87,8 @@ section {
 .button.whatsapp { background: #25D366; }
 .button.tiktok { background: #FF0050; color: #000; }
 .button.facebook { background: #4267B2; }
-.button.gmail { background: #D93025; }
-.button.instagram { background: #0000; }
+.button.gmail {background: linear-gradient(to right, #3e65cf, #c71610, #f2a60c, #3b60c4, #08851b); }
+.button.instagram { background: #FCCC63; color: #000; }
 
 /* Gallery Section */
 #gallery {
