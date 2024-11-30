@@ -107,7 +107,7 @@ section {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
     gap: 10px;
-    justify-items: start;
+    justify-items: center;
 }
 
 .gallery-container img {
