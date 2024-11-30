@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="lv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fotogrāfa Pakalpojumi</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#par-mums">Par mums</a></li>
+                <li><a href="#cenas">Cenas</a></li>
+                <li><a href="#kontakti">Kontakti</a></li>
+                <li><a href="#gallery">Galerija</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Par mums section -->
+        <section id="par-mums">
+            <h1>Par mums</h1>
+            <p>• Piedāvājam fotogrāfa pakalpojumus, izdruku un iereāmēšanu vienuviet. Fotosesijas Jūsu izvēlētā vietā.</p>
+            <p>• Fotografējam: Portretus, Ģimenes foto, Dzīvniekus, Mašīnas, u.c.</p>
+            <p>• Izbraucam pa visu Latviju</p>
+        </section>
+
+        <!-- Cenas section -->
+        <section id="cenas">
+            <h1>Cenas</h1>
+            <div class="pricing">
+                <div class="pricing-item">
+                    <h2>Fotosesija</h2>
+                    <p>Fotosesijas cena - <strong>25€/h</strong></p>
+                </div>
+                <div class="pricing-item">
+                    <h2>Fotogrāfijas ierāmēšana rāmī ar stiklu (Iekļauti: Foto apstrāde, izdruka un ierāmēšana)</h2>
+                    <p><strong>A4 (21x29cm)</strong> formāta ierāmēšana - <strong>15€/gab.</strong></p>
+                    <p><strong>A3 (29x42cm)</strong> formāta ierāmēšana - <strong>25€/gab.</strong></p>
+                </div>
+                <div class="pricing-item">
+                    <h2>Fotogrāfiju skenēšana (Digitalizēšana) un uzlabošana</h2>
+                    <p>Fotogrāfiju skenēšana līdz A4 izmēram -<strong>0,40€/gab.</strong></p>
+                    <p>Fotoalbumu skenēšana - <strong>30€/100fotogrāfijas</strong></p>
+                    <p>Veco fotogrāfiju uzlabošana (Defektu novēršana) - <strong>sākot no 3€/gab</strong></p>
+                </div>
+                <div class="pricing-item">
+                    <h2>Digitālā fotogrāfija (JPG)</h2>
+                    <p>Pilnībā apstrādāts fails (JPG) ar pilnu izšķirtspēju - <strong>3€/gab.</strong></p>
+                    <p>Pasūtot vismaz 2 ierāmētas fotogrāfijas pie mums <strong>visām digitālajām fotogrāfijām - </strong>70% atlaide</p>
+                </div>
+                <div class="pricing-item">
+                    <h2>Izbraukšana ārpus Jūrmalas</h2>
+                    <p>Izbraucam <strong>25km</strong> ap Jūrmalu <strong>bez maksas</strong></p>
+                    <p>Tālāk - <strong>pēc vienošanās</strong></p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Kontakti section -->
+        <section id="kontakti">
+            <h1>Kontakti</h1>
+            <p>Tālrunis: <strong>+371 22 811 564</strong></p>
+            <div class="buttons">
+                <a href="https://wa.me/37122811564?text=Sveiki%21%20V%C4%93los%20izmantot%20J%C5%ABsu%20pakalpojumu.%20Vai%20varat%20aprakst%C4%ABt%20s%C4%ABk%C4%81k%20par%20cen%C4%81m%3F" class="button whatsapp">WhatsApp</a>
+                <a href="https://www.tiktok.com/@foto_240?_t=8rmWmATN5wU&_r=1" class="button tiktok">TikTok</a>
+                <a href="https://www.facebook.com/profile.php?id=61561594558244" class="button facebook">Facebook</a>
+                <a href="mailto:info.foto240@gmail.com?subject=Par foto pakalpojumiem&body=Sveiki!%20V%C4%93los%20izmantot%20J%C5%ABsu%20pakalpojumu.%20Vai%20varat%20aprakst%C4%ABt%20s%C4%ABk%C4%81k%20par%20cen%C4%81m%3F" class="button gmail">Gmail</a>
+                <!-- Placing Instagram below the other buttons for better mobile layout -->
+                <a href="https://www.instagram.com/foto__240/profilecard/?igsh=MXdwMjJ3OGZ2YW45OA==" class="button instagram">Instagram</a>
+            </div>
+        </section>
+
+        <!-- Gallery section -->
+        <section id="gallery">
+            <h2>Mašīnas</h2>
+            <div class="gallery-container">
+                <img src="photo1.jpg" alt="Gallery Photo 1" data-src="photo1.jpg">
+                <img src="photo7.jpg" alt="Gallery Photo 7" data-src="photo7.jpg">
+                <img src="photo3.jpg" alt="Gallery Photo 3" data-src="photo3.jpg">
+            </div>
+            <h2>Dzīvnieki</h2>
+            <div class="gallery-container">
+                <img src="photo2.jpg" alt="Gallery Photo 2" data-src="photo2.jpg">
+                <img src="photo4.jpg" alt="Gallery Photo 4" data-src="photo4.jpg">
+                <img src="photo5.jpg" alt="Gallery Photo 5" data-src="photo5.jpg">
+                <img src="photo6.jpg" alt="Gallery Photo 6" data-src="photo6.jpg">
+            </div>
+        </section>
+    </main>
+
+    <!-- Lightbox -->
+    <div id="lightbox" class="lightbox">
+        <span class="close" onclick="closeLightbox()">×</span>
+        <img id="lightbox-image" src="" alt="Lightbox Image">
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
