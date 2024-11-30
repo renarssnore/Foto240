@@ -1,15 +1,94 @@
-/* Gallery Section */
-#gallery {
-    padding: 20px;
-    text-align: center;
-    background-color: #111;
+/* General Styles */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-image: url('background.jpg'); /* Replace with your image file */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    color: #fff;
+    line-height: 1.6;
 }
 
-#gallery h2 {
-    color: white;
-    margin-bottom: 20px;
-    font-size: 2rem;
+header {
+    background: #333;
+    padding: 10px 20px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
 }
+
+header nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+header nav ul li {
+    margin: 0 15px;
+}
+
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.2rem;
+}
+
+header nav ul li a:hover {
+    text-decoration: underline;
+}
+
+section {
+    padding: 20px;
+    text-align: center;
+}
+
+/* Pricing Section */
+.pricing {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+.pricing-item {
+    background: #222;
+    padding: 15px;
+    border-radius: 5px;
+}
+
+.pricing-item h2 {
+    margin-top: 0;
+}
+
+/* Buttons */
+.buttons {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.button {
+    padding: 10px 15px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    color: #fff;
+    transition: background 0.3s;
+}
+
+.button:hover {
+    opacity: 0.8;
+}
+
+.button.whatsapp { background: #25D366; }
+.button.tiktok { background: #FF0050; color: #000; }
+.button.facebook { background: #4267B2; }
+.button.gmail { background: #D93025; }
+.button.instagram { background: #FCCC63; }
 
 /* Gallery Section */
 #gallery {
@@ -103,70 +182,11 @@
 
 /* Media Queries for Mobile Optimization */
 @media (max-width: 768px) {
-    .gallery-container {
-        grid-template-columns: repeat(auto-fit, minmax(120px, 1fr)); /* Adjusts the size for smaller screens */
-        gap: 15px; /* Increases the gap between images */
+    .buttons {
+        flex-direction: column; /* Stacks buttons vertically */
+        gap: 10px;
     }
 
-    .gallery-container img {
-        max-width: 100px; /* Reduces the maximum size of the images */
-    }
-}
-
-@media (max-width: 480px) {
-    header nav ul {
-        flex-direction: column; /* Stacks navigation items vertically */
-        align-items: center;
-    }
-
-    header nav ul li {
-        margin: 5px 0; /* Adjusts spacing for smaller screens */
-    }
-}
-
-
-/* Dzīvnieki (Animals) specific styling (optional) */
-.dzivnieki img {
-    border-color: #8bc34a; /* Green border for animals */
-}
-
-/* Mašīnas (Cars) specific styling (optional) */
-.masinas img {
-    border-color: #2196f3; /* Blue border for cars */
-}
-
-/* Lightbox styles */
-.lightbox {
-    display: none;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.9);
-    justify-content: center;
-    align-items: center;
-    z-index: 1001;
-}
-
-.lightbox img {
-    max-width: 90%;
-    max-height: 90%;
-    border: 2px solid white;
-    border-radius: 5px;
-}
-
-.lightbox .close {
-    position: absolute;
-    top: 20px;
-    right: 20px;
-    font-size: 3rem;
-    color: white;
-    cursor: pointer;
-}
-
-/* Media Queries for Mobile Optimization */
-@media (max-width: 768px) {
     .gallery-container {
         grid-template-columns: repeat(auto-fit, minmax(120px, 1fr)); /* Adjusts the size for smaller screens */
         gap: 15px; /* Increases the gap between images */
