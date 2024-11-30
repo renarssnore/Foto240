@@ -34,21 +34,4 @@ document.addEventListener('DOMContentLoaded', () => {
             lightbox.style.display = 'none';
         }
     });
-
-    // Lazy loading of images
-    const lazyImages = document.querySelectorAll('img[data-src]');
-    const imageObserver = new IntersectionObserver((entries, observer) => {
-        entries.forEach(entry => {
-            if (entry.isIntersecting) {
-                const image = entry.target;
-                image.src = image.getAttribute('data-src');
-                image.removeAttribute('data-src');
-                observer.unobserve(image); // Stop observing after image is loaded
-            }
-        });
-    });
-
-    lazyImages.forEach(image => {
-        imageObserver.observe(image);
-    });
 });
