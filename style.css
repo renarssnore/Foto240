@@ -103,18 +103,6 @@ section {
     font-size: 2rem;
 }
 
-/* Gallery Category */
-.gallery-category {
-    margin-bottom: 40px;
-}
-
-.gallery-category h3 {
-    color: white;
-    margin-bottom: 15px;
-    font-size: 1.5rem;
-    font-weight: bold;
-}
-
 .gallery-container {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
@@ -133,21 +121,6 @@ section {
 
 .gallery-container img:hover {
     transform: scale(1.1);
-}
-
-/* Optional: Add distinct styling for Dzīvnieki (Animals) and Mašīnas (Cars) */
-.gallery-category h3 {
-    color: #fff;
-}
-
-/* Dzīvnieki (Animals) specific styling (optional) */
-.gallery-category h3:nth-of-type(1) {
-    color: #8bc34a; /* Green for Animals */
-}
-
-/* Mašīnas (Cars) specific styling (optional) */
-.gallery-category h3:nth-of-type(2) {
-    color: #2196f3; /* Blue for Cars */
 }
 
 /* Lightbox styles */
